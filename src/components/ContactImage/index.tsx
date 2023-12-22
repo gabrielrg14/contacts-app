@@ -9,11 +9,11 @@ type ContactImageProps = {
 };
 
 const ContactImage = ({ contact, size, fontSize }: ContactImageProps) => {
-  const getContactBgColor = (letter: string): string => {
+  const getContactBgColor = (name: string): string => {
     let hash = 0;
-    if (letter.length === 0) return "0";
-    for (let i = 0; i < letter.length; i++) {
-      hash = letter.charCodeAt(i) + ((hash << 5) - hash);
+    if (name.length === 0) return "0";
+    for (let i = 0; i < name.length; i++) {
+      hash = name.charCodeAt(i) + ((hash << 5) - hash);
       hash = hash & hash;
     }
     let color = "#";
@@ -25,7 +25,7 @@ const ContactImage = ({ contact, size, fontSize }: ContactImageProps) => {
   };
 
   return contact.imageAvailable ? (
-    <S.CircularImage source={{ uri: contact.image?.uri }} size={size} />
+    <S.CircularImage testID="contactImage" source={{ uri: contact.image?.uri }} size={size} />
   ) : (
     <S.CircularView size={size} bgColor={getContactBgColor(contact.name)}>
       <S.InitialLetter fontSize={fontSize}>

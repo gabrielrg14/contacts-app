@@ -12,7 +12,7 @@ describe("<ContactListItem />", () => {
       />
     )
 
-    expect(getByText(/test/i)).toBeTruthy()
+    expect(getByText(/test/i)).toBeOnTheScreen()
   })
 
   it("should call the onPress function when passed", () => {

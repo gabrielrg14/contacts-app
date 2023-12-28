@@ -13,7 +13,7 @@ describe("<ContactImage />", () => {
         />
       )
 
-      expect(getByTestId("contactImage")).toBeTruthy()
+      expect(getByTestId("contactImage")).toBeOnTheScreen()
     })
   })
 
@@ -27,7 +27,7 @@ describe("<ContactImage />", () => {
         />
       )
 
-      expect(getByText("T")).toBeTruthy()
+      expect(getByText("T")).toBeOnTheScreen()
     })
   })
 
@@ -41,7 +41,7 @@ describe("<ContactImage />", () => {
         />
       )
 
-      expect(getByText("")).toBeTruthy()
+      expect(getByText("")).toBeOnTheScreen()
     })
   })
 })

@@ -1,8 +1,8 @@
-import type {Config} from 'jest';
+import type { Config } from 'jest';
 
 const config: Config = {
   preset: "react-native",
-  setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts']
+  setupFilesAfterEnv: ["./jest-setup.ts"]
 };
 
 export default config;

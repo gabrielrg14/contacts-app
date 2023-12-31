@@ -41,7 +41,7 @@ describe("<ContactImage />", () => {
         />
       )
 
-      expect(getByText("")).toBeOnTheScreen()
+      expect(getByText("")).toBeEmptyElement()
     })
   })
 })

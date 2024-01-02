@@ -25,9 +25,6 @@
       },
       "package": "com.gabrielrg14.contactsapp"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
     "extra": {
       "eas": {
         "projectId": "f50bfe34-d68c-43d7-ae83-06b2d78af8eb"

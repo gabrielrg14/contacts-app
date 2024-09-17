@@ -2,6 +2,26 @@
   "name": "contacts-app",
   "version": "1.0.0",
   "main": "index.ts",
+  "description": "Mobile contact list application that allows you to create new contacts on the device and view the information of those added.",
+  "author": "Gabriel Rapucci Gonzalez <gabrielrapuccigonzalez14@hotmail.com> (https://gabrielrapucci.com.br)",
+  "homepage": "https://github.com/gabrielrg14/contacts-app#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabrielrg14/contacts-app"
+  },
+  "bugs": {
+    "url": "https://github.com/gabrielrg14/contacts-app/issues"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "contacts",
+    "contacts-app",
+    "mobile",
+    "front-end",
+    "portfolio"
+  ],
+  "license": "MIT",
   "scripts": {
     "start": "expo start",
     "test": "jest",
